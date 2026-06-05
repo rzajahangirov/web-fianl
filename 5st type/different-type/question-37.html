@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37</title>
+    <style>
+        .recipe-content{display: flex;}
+        @media only screen and  (min-width:993px){
+            .recipe-content{
+                flex-direction: row;
+                justify-content: space-between;
+                gap:5%;
+            }
+            .ingredients{width:30%;}
+            .instructions{width:65%;}
+        }
+        @media only screen and (max-width:992px){
+            .recipe-content{
+                flex-direction:column-reverse;
+                gap: 25px;
+            }
+            .ingredients ,.instructions{width:100%;}
+        }
+    </style>
+</head>
+<body>
+        <h1>Classic Homemade Chocolate Chip Cookies</h1>
+        <picture>
+            <source media="(min-width:993px)" srcset="recipe-large.jpg">
+            <source media="(min-width:601px)" srcset="recipe-medium.jpg">
+            <source media="(max-width:600px)" srcset="recipe-small.jpg">
+            <img src="recipe-medium.jpg" alt="A plate of freshly baked chocolate chip cookies with melted chocolate pockets">
+        </picture>
+        <div class="recipe-content">
+            <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>250g All-purpose flour</li>
+                <li>150g Unsalted butter (softened)</li>
+                <li>100g Granulated white sugar</li>
+                <li>150g Brown sugar</li>
+                <li>2 Large eggs</li>
+                <li>200g Dark chocolate chip</li>
+                <li>1 tsp Vanilla extract</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li><strong>Cream Butter & Sugars:</strong> In a large mixing bowl, beat the softened butter, white sugar, and brown sugar together until the mixture is light and fluffy.</li>
+                <li><strong>Add Wet Ingredients:</strong> Whisk in the eggs one at a time, followed by the vanilla extract. Beat well until entirely integrated.</li>
+                <li><strong>Combine Dry Mix:</strong> Sift the flour into the wet mixture. Fold gently with a spatula until just combined, then stir in the chocolate chips. Do not overmix.</li>
+                <li><strong>Bake:</strong> Scoop rounded tablespoons of dough onto a baking sheet lined with parchment paper. Bake at 180°C (350°F) for 10 to 12 minutes until the edges turn golden brown.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

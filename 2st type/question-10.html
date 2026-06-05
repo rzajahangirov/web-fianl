@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 5px solid rgb(255, 69, 255);
+            padding: 10px;
+            width: 250px;
+        }
+        h3{
+            color: rgb(255, 69, 255);
+            font-weight: bold;
+        }
+        form{
+            display: flex;
+            flex-direction:column;
+            gap: 12px;
+        }
+        input{
+            border: 2px solid rgb(255, 69, 255);
+            height: 30px;
+            text-indent: 8px;
+        }
+        label{
+            color: rgb(173, 77, 173);
+            font-weight: bold;
+        }
+        button{
+            background-color: purple;
+            color: white;
+            text-align: center;
+            height: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>FeedBack Form</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone" placeholder="Phone number">
+            <label for="company">Name:</label>
+            <input type="text" id="company" placeholder="Company name">
+            <button>Submit FeedBack</button>
+        </form>
+    </div>
+</body>
+</html>

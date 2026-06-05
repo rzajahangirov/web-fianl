@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>11</title>
+   <style>
+    .parent{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width:200px;
+        gap:10px;
+        margin: 200px auto;
+        background-color: rgb(247, 203, 164);
+        padding: 5px 5px;
+
+    }
+    .child{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .title{
+        grid-column: span 2 ;
+        background-color: #c28e13;
+    }
+    .num{
+        background-color: #e0a924;
+    }
+    
+   </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child title">Title</div>
+        <div class="child num">2</div>
+        <div class="child num">3</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        th{
+            color: white;
+            background-color: rgba(14, 55, 120, 0.818);
+            border:0;
+            text-align: left;
+        }
+        td{
+            border:1px gray solid;
+        }
+        td,th{
+            padding-left:5px;
+            height: 40px;
+        }
+        .colory{
+            background-color: rgba(128, 128, 128, 0.221);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Student</th>
+            <th> Subject</th>
+            <th> Grade</th>
+        </tr>
+        <tr>
+            <td class="colory">John Smith</td>
+            <td rowspan="2" class="colory"> HTML/CSS</td>
+            <td class="colory">95</td>
+        </tr>
+        <tr>
+            <td>Emily Davis</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td class="colory">Micheal Brown</td>
+            <td class="colory">React</td>
+            <td class="colory">92</td>
+        </tr>
+    </table>
+</body>
+</html>

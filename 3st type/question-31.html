@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-row: 1fr 1fr;
+            grid-column: 1fr 1fr 1fr;
+            gap: 5px;
+            margin: auto auto;
+            height: 200px;
+            width: 200px;
+        }
+        .child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .a{
+            grid-row: span 2;
+            background-color: blue;
+        }
+        .b{
+            background-color: darkblue;
+        }
+        .d{
+            grid-column: span 2;
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child a">A</div>
+        <div class="child b">B</div>
+        <div class="child b">C</div>
+        <div class="child d">D</div>
+    </div>
+</body>
+</html>

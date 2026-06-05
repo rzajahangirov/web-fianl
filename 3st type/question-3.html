@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3</title>
+    <style>
+        .parent{
+            display:flex;
+            flex-direction: row;
+            /* justify-content: space-between; */
+            gap:15px;
+            width:600px;
+            margin: auto auto ;
+        }
+        .child{
+            height: 50px;
+            flex:1;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .a{background-color: rgb(64, 0, 128);}
+        .b{background-color: rgb(152, 82, 221);}
+        .c{background-color: rgb(106, 0, 211);}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child a">Card A</div>
+        <div class="child b">Card B</div>
+        <div class="child c">Card C</div>
+    </div>
+</body>
+</html>

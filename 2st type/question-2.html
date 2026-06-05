@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>2</title>
+    <style>
+        div {
+            border: 3px orange solid;
+            /* 1. Sabit eni bir az artıraq ki, form rahat nəfəs alsın */
+            width: 250px; 
+            padding: 20px; /* Daxili boşluğu artırdıq */
+            
+            /* Center-ləşdirmək üçün (istəyə bağlıdır) */
+            margin: 20px auto; 
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        /* Form artıq flex-dir, display:block ehtiyac yoxdur, onu sildik */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* Elementlər arasındakı məsafə */
+        }
+
+        /* Əsas sehrli toxunuş bu blokdadır! */
+        input, select, button {
+            border: 2px orange solid;
+            padding: 8px 10px;
+        }
+        button {
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Survey Form</p>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="Age">
+            <select >
+                <option selected disabled>Select Gender</option>
+                <option>Male</option>
+                <option >Female</option>
+            </select>
+            <button>Submit Survey</button>
+        </form>
+    </div>
+</body>
+</html>
